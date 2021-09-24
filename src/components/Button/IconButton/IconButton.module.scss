@@ -1,0 +1,14 @@
+.iconButton {
+  background-color: #e7e5f4;
+  height: 29px;
+  width: 29px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  .inputButtonIcon {
+    display: flex;
+    margin: auto;
+  }
+}

@@ -1,0 +1,44 @@
+.bigEmotionContainer {
+  margin-bottom: 10px;
+}
+.bigEmotionContainer p {
+  background-color: #a096dc;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.bigEmotionSelected p {
+  background-color: #e7e5f4;
+  height: 42px;
+  width: 42px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  animation: bounce 0.2s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}

@@ -1,0 +1,32 @@
+.avatarBox {
+  height: 87px;
+  width: 87px;
+  border: 1px solid #e7e5f4;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+.avatar {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.selectedAvatarBox {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(183, 178, 247, 0) 81.77%,
+    #b7b2f7 100%
+  );
+}
+.selectedTag {
+  position: absolute;
+  background-color: #a096dc;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 14px;
+  transform: translate(35px, -24px);
+}

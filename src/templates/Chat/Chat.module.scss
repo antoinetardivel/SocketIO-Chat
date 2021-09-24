@@ -1,0 +1,23 @@
+.ChatContainer {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: column;
+}
+.messageCreation {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.chatHeader {
+  height: 80px;
+}
+.allChat {
+  display: flex;
+  background: linear-gradient(
+    167deg,
+    rgba(15, 44, 118, 1) 0%,
+    rgba(128, 120, 176, 1) 100%
+  );
+}

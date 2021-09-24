@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SocketProvider from "./providers/socket/SocketProvider";
+import styles from "./styles/global.module.scss";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Chat from "./templates/Chat/Chat.template";
+import Login from "./templates/Login/Login.template";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <SocketProvider>
+          <div className={styles.App}>
+            <header className="App-header"></header>
+            <Switch>
+              <Route exact path="/">
+                <Login />
+              </Route>
+              <Route path="/chat">
+                <Chat />
+              </Route>
+            </Switch>
+          </div>
+        </SocketProvider>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

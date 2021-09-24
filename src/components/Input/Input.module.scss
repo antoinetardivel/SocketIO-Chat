@@ -1,0 +1,28 @@
+.input {
+  height: 39px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #ccc8e6;
+  box-sizing: border-box;
+  border-radius: 20px;
+  outline: none;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #e7e5f4;
+  font-style: normal;
+  padding-right: 45px;
+  &::placeholder {
+    color: #e7e5f4;
+    font-style: italic;
+  }
+}
+.inputButton {
+  position: inherit;
+  margin-top: -34px;
+  margin-left: calc(100% - 34px);
+}
+.formInput {
+  max-width: 700px;
+  margin: auto;
+}

@@ -1,0 +1,27 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  padding: 0 22px;
+}
+.headerTitle {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #e7e5f4;
+}
+.balanceCenter {
+  width: 29px;
+}
+.headerLogo {
+  height: 40px;
+  max-height: 40px;
+  filter: drop-shadow(0px 0px 10px #e7e5f4);
+  -webkit-filter: drop-shadow(0px 0px 10px #e7e5f4);
+}
