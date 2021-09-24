@@ -9,6 +9,7 @@
   align-items: center;
   margin: auto;
   cursor: pointer;
+  animation: animava 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .avatar {
   height: 75px;
@@ -29,4 +30,14 @@
   padding: 4px;
   font-size: 14px;
   transform: translate(35px, -24px);
+}
+
+@keyframes animava {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
