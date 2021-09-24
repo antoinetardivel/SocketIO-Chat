@@ -15,6 +15,11 @@
   margin-top: 5px;
   transition-duration: 0.2s;
   cursor: pointer;
+  $breakpoint-phone: 800px;
+  @media (min-width: $breakpoint-phone) {
+    height: 40px;
+    width: 40px;
+  }
 }
 .bigEmotionSelected p {
   background-color: #e7e5f4;
